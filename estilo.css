@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+img#logotipo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+body {
+    background-color: rgb(255, 220, 226);
+}
