@@ -35,14 +35,13 @@ img#logotipo {
     margin-left: 300px;
 }
 body {
-    background-color: rgb(253, 229, 233);
-    /*rosa rgb(253, 229, 233) // amarelo rgb(255, 234, 212)*/
+    background-image: linear-gradient(to right,#FDE5E9, #C2DDF8);
 }
 div#frase {
     display: block;
     font-style: oblique;
     color: rgb(189, 0, 94);
-    background-color: rgb(215, 223, 255);
+    background-color: #C2DDF8;
     margin-top: 230px;
     margin-left: -10px;
     margin-right: -10px;
