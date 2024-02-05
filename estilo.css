@@ -7,8 +7,7 @@ header#cabecalho {
 }
 
 nav#menu {
-    display: block;
-    float: right;
+    display: inline-block;
 }
 nav#menu ul {
     list-style: none;
@@ -39,7 +38,7 @@ img#logotipo {
     margin-left: 300px;
 }
 body {
-    background-image: linear-gradient(45deg,#ffe6eaba 20%,#e3cfffce, #c2ddf899);
+    background-image: linear-gradient(45deg,#ffdce2ba 20%,#e3cfffce, #d4e9fe99);
 }
 div#frase {
     display: block;
