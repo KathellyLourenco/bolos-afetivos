@@ -1,17 +1,33 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 
 header#cabecalho {
-    position: absolute;
+    top: 10px;
+    border-bottom: 1px rgba(0, 0, 0, 0.162) solid;
+    height: 220px;
+    /*background: url(_imagens/logo200.png) no-repeat 200px 0px;*/
+    background-image: linear-gradient(45deg,#ffdce2ba 20%,#e3cfffce, #d4e9fe99);
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-bottom: -45px;
+}
+img#logotipo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 280px;
     top: 10px;
 }
-
 nav#menu {
     display: block;
-    float: right;
 }
 nav#menu ul {
     list-style: none;
+    text-align: center;
+    position: relative;
+    top: -120px;
+
 }
 nav#menu li {
     display: inline-block;
@@ -27,20 +43,51 @@ nav#menu li:hover{
 }
 nav#menu a {
     text-decoration: none;
-    color: rgb(189, 0, 94);
+    color: rgb(169, 1, 85);
     font-family: Arial, Helvetica, sans-serif;
 }
-
-img#logotipo {
-    display: block;
-    width: 180px;
-    height: 180px;
-    float: left;
-    margin-left: 300px;
+figure.produtos {
+    position: relative;
+}
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+figure.produtos img {
+    margin-left: 20px;
+}
+figure.produtos figcaption {
+    opacity: 0;
+    position: absolute;
+    /* para que a legenda fique no topo da imagem*/
+    top: 300px;
+    left: 120px;
+    background-color: #6fb7ffbf;
+    border-radius: 100px;
+    color: white;
+    padding: 15px;
+    /*box-sizing: border-box;*/
+    /* para fazer a legenda e fundo caber na foto*/
+    transition: opacity 1s;
+}
+figure.produtos:hover figcaption {
+    opacity: 1;
 }
 body {
-    background-image: linear-gradient(45deg,#ffe6eaba 20%,#e3cfffce, #c2ddf899);
+    background-color: #e3f1ff;
+    font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+    text-align: center;
+    color: rgb(169, 1, 85);
+    font-size: 2.5em;
+}
+h2 {
+    text-align: center;
+    color: rgb(169, 1, 85);
+    font-size: 2em;
+}
+/*
 div#frase {
     display: block;
     font-style: oblique;
@@ -55,4 +102,13 @@ div#frase {
     font-weight: lighter;
     text-align: center;
     box-shadow:  0px 0px 10px rgba(0, 0, 0, .3);
+}
+*/
+div#interface {
+    width: 1050px;
+    background-color: rgb(255, 255, 255);
+    margin: -10px auto 0px auto;
+    padding: 10px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
 }
