@@ -13,16 +13,42 @@
     <nav id="menu">
     <ul>
         <li><a href="index.html">Início</a></li>
-        <li><a href="#">Quem Somos</a></li>
-        <li><a href="produtos.html">Ementa</a></li>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="produtos.html">Nossos Produtos</a></li>
         <li><a href="faleconosco.html">Fale Conosco</a></li>
     </ul>
     </nav>
     </header>
-<form action="#">
-    <input type="text" name="nome" placeholder="Digite seu nome" required>
-    <input type="text" name="apelido" placeholder="Digite seu apelido" required>
-    <a> Data de nascimento</a><input type="date" name="datanascimento">
-</form>
+    <section>
+        <form action="#">
+            <div>
+                <label for="nome">Nome Completo</label>
+                <input type="text"  name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" maxlength= "13" pattern="([0-9]{3}) [0-9]{3}-[0-9]{3}-[0-9]{3}" name="telefone" placeholder="Digite seu telefone" required>
+            </div>
+            <div>
+                <label for="datanasc">Data de Nascimento</label>
+                <input type="date" name="datanascimento">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div>
+                <label for="duvida"></label>
+                <textarea type="text" name="duvida" id="#" cols="50" rows="10" placeholder="Deixe sua dúvida aqui"></textarea>
+            </div>
+            <div>
+                 <button>Enviar</button>
+            </div>
+        </form>
+    </section>
 </body>
+<footer>
+    <a href="https://www.instagram.com/cakeeco.pt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@cakeeco.pt</a>
+    &copy;
+ </footer>
 </html>
