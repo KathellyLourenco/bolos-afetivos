@@ -163,6 +163,7 @@ div.produtos a {
 div.produtos a:hover {
     background-color: var(--lilasfundo);
     border-radius: 10px;
+    text-decoration: underline;
 }
 div.produtos img {
     width: 100%;
@@ -187,17 +188,20 @@ div.produtos img {
 }
 footer {
     background-color: #86D3FF;
-    margin: 10px -8.2px -10px -10px;
-    padding: 10px;
+    padding: 5px;
     clear: both;
     border-top: 1px rgba(0, 0, 0, 0.162) solid;
     text-align: center;
+    margin-top: 15px;
 }
 footer a {
-    margin: auto;
     color: var(--rosafonte);
     font-size: 18px;
     text-decoration: none;
+    padding: 5px;
+}
+strong {
+    font-weight: normal;
 }
 /*
 div#frase {
@@ -216,3 +220,61 @@ div#frase {
     box-shadow:  0px 0px 10px rgba(0, 0, 0, .3);
 }
 */
+section#form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 200px;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--lilasfundo);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.258);
+    margin: 0px 50px;
+}
+form {
+    border-radius: 5px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 20px;
+
+}
+input, textarea, button {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.258);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.49);
+    padding: 15px;
+    outline: none;
+    margin: 5px;
+}
+button {
+    cursor: pointer;
+    font-weight: bold;
+}
+h2.formulario {
+    padding: 15px;
+}
+.whats {
+    text-align: center;
+}
+.whats a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: green;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.whats img, a {
+    display: inline-block;
+}

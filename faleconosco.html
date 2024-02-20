@@ -18,10 +18,26 @@
     <a href="faleconosco.html">Contacto</a>
 </nav>
     <main id="interface">
-        <h2>Preencha seus dados e entraremos em contato consigo!</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt natus recusandae enim cum, qui accusamus. Esse voluptatibus fugit, minus nihil impedit assumenda officia soluta dolorum harum tempore debitis velit error?</p>
-    <section>
-        <form action="#">
+        <h2 class="formulario">Preencha seus dados e entraremos em contato consigo!</h2>
+    <section id="form">
+        <form action="https://api.staticforms.xyz/submit" method="POST" target="_blank">
+            <input type="hidden" name="accessKey" value="124ffed9-48cd-4c3f-bf08-17637680c2ce" required>
+            <input type="hidden" name="redirectTo" value="https://wa.me/351961252414/">
+            <input type="text" name="name" placeholder="Digite seu nome" required>
+            <input type="number" maxlength="12" name="phone" placeholder="(xxx)xxx-xxx-xxx" required>
+            <textarea cols="30" rows="5" name="message" placeholder="Digite sua mensagem." required></textarea>
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="_subject" value="Novo Contacto!">
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+       </form>
+       </section>
+       <section class="whats">
+        <h2 class="formulario">Ou, se preferir, pode entrar em contacto por whatsapp.</h2>
+        <img src="_imagens/WhatsApp_icon.png" alt="Fale conosco pelo Whatsapp" title="Fale conosco pelo Whatsapp" width="30px"><a href="https://wa.me/351961252414/" target="_blank">Fale conosco pelo whatsapp</a>
+           
+       </section>
+        <!--<form action="https://wa.me/351932482985" target="_blank">
             <div>
                 <label for="nome">Nome Completo</label>
                 <input type="text"  name="nome" placeholder="Digite seu nome" required>
@@ -40,12 +56,14 @@
             </div>
             <div>
                 <label for="duvida"></label>
-                <textarea type="text" name="duvida" id="#" cols="50" rows="10" placeholder="Deixe sua dúvida aqui"></textarea>
+                <textarea name="duvida" cols="50" rows="10" placeholder="Deixe sua dúvida aqui" required></textarea>
             </div>
             <div>
-                <link rel="stylesheet" href="https://web.whatsapp.com/send?phone=351961252414" target="_blank"><button>enviar</button>
+                <button type="submit">enviar</button>
+                <button><a aria-label="Chat on WhatsApp" href="https://wa.me/351932482985/?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20as%20encomendas" target="_blank">Enviar</button>
+                <a/>
             </div>
-        </form>
+        </form>-->
     </section>
     </main>
 </body>
