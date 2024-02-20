@@ -220,6 +220,12 @@ div#frase {
     box-shadow:  0px 0px 10px rgba(0, 0, 0, .3);
 }
 */
+@media (max-width:433px){
+    /*ATE 433 DE LARGURA A MARGIM VAI SER 0*/
+    section#form {
+        margin: 0px 0px !important;
+    }
+}
 section#form {
     margin: 0;
     padding: 0;
@@ -235,14 +241,13 @@ section#form {
     margin-bottom: 20px;
     background-color: var(--lilasfundo);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.258);
-    margin: 0px 50px;
+    margin: 0px 40px;
 }
 form {
     border-radius: 5px;
     min-width: 300px;
     display: flex;
     flex-direction: column;
-    margin: 0 10px;
     padding: 20px;
 
 }
