@@ -121,6 +121,12 @@ main p {
         padding: 10px;
     }
 }
+@media (min-width:830px){
+    .container > p {
+        margin-top: 60px !important; 
+    }
+}
+
 .container img#confeiteira {
     max-width: 236px;
     max-height: 305px;
