@@ -101,6 +101,7 @@ main p {
 .container {
     margin-top: 5px;
     display: flex;
+    align-items: center;
     background-color: var(--azulclaro);
     padding: 15px;
     border-radius: 10px;
@@ -133,7 +134,7 @@ main p {
     padding: 15px;
     font: normal normal 18px arial, verdana, sans-serif;
     color: dimgray;
-    text-align: center;
+    text-align: justify;
 }
 div.produtos {
     background-color: var(--lilasfundo);
@@ -188,19 +189,48 @@ div.produtos img {
         height: 525px !important;
     }
 }
+li {
+    list-style: none;
+}
+/*-------------------------------------------------FOOTER*/
 footer {
+    min-width: 320px;
     background-color: #86D3FF;
     padding: 5px;
-    clear: both;
     border-top: 1px rgba(0, 0, 0, 0.162) solid;
-    text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 13.5px;
+    font-weight: 500;
+}
+footer h3 {
+    font-weight: 600;
+}
+footer p {
+    font-style: italic;
 }
 footer a {
     color: var(--rosafonte);
-    font-size: 18px;
     text-decoration: none;
     padding: 5px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.slogan,.rodapefale,.pag {
+    display: inline-block;
+    padding: 10px 20px ;
+    text-align: center;
+}
+.rodapefale,.pag {
+    text-align: start;
+    vertical-align: top;
+}
+.final {
+    text-align: center;
+    background-color: #76ccfe;
+    margin: 0px -5px -16px -5px !important;
+    font-size: 10px;
+    padding: 0.5px;
 }
 strong {
     font-weight: normal;
@@ -273,6 +303,8 @@ h2.formulario {
 .whats {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 .whats a {
     font-size: 20px;
