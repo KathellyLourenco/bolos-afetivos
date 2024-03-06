@@ -6,6 +6,103 @@
     <title>Produtos</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+      @font-face {
+        font-family: cursivatitulo;
+        src: url(fonts/Stars&Love-BottomHeavy.ttf);
+      }
+      h1{
+        padding-bottom: 20px;
+      }
+      h2 {
+        font-size: 30px !important;
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+      }
+      p > strong {
+        font-weight: 500;
+      }
+      aside {
+        background-color: #e3cfffce;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      aside > h2 {
+        font-size: 21px !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+      }
+      aside > p {
+        font-size: 15px !important;
+        padding: 10px 0px 10px 0px !important;
+      }
+      aside ul {
+        margin-top: 0px;
+      }
+      aside li {
+        font-size: 15px;
+      }
+      aside li strong {
+        font-weight: 500;
+      }
+      .fora {
+        background-color: #c5eaff;
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 15px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.318);
+      }
+      .dentro {
+        background-color: #e3f1ff;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .dentro img {
+        max-width: 300px;
+        max-height: 350px;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow:  0px 0px 3px rgba(0, 0, 0, 0.2);
+      }
+      .dentro p {
+        text-align: justify;
+        text-indent: 0px;
+      }
+      .lado {
+        padding: 10px;
+      }
+      button {
+        transition: 1s;
+        background-color: #f2f8ff;
+      }
+      button:hover {
+        background-color: #dfe6ef;
+      }
+      button > a {
+        text-decoration: none;
+        color: rgb(194, 0, 97);
+      }
+      .strong {
+        text-align: center !important;
+        font-size: 28px;
+        color: rgb(194, 0, 97);
+        font-family: 'cursivatitulo', cursive;
+      }
+      @media (max-width:650px) {
+        .dentro {
+          display: grid;
+          justify-items: center;
+          text-align: center;
+        }
+        }
+        @media (min-width:480px) {
+          aside ul {
+          columns: 2;
+        }
+        }
+    </style>
 </head>
 <body>
 <header id="cabecalho">
@@ -17,136 +114,153 @@
     <a href="faleconosco.html">Contacto</a>
 </nav>
     <main id="interface">
-        <h2>Produtos</h2>
-        <h4>Bolos Caseiros</h4>
-        <section class="bolos caseiros">
-          <img src="imagens/logo-oficialres.jpeg" aling="left" alt="Bolo de banana com canela">
-          <h4>Banana com Canela</h4>
-          <P>Bolo com massa de Banana e um toque de canela.</P>
-          <h5>10€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <h1>Nossos produtos</h1>
+        <aside>
+          <h2>Escolha sua cobertura</h2>
+          <p>Antes de conhecer nossos bolos caseiros, saiba que você também pode personalizar o seu bolo colocando uma cobertura à sua escolha! Abaixo você pode ver a lista de coberturas que temos e seus valores.</p>
+            <section class="cobertura">
+              <ul>
+                <li>Brigadeiro tradicional <strong>2,00€</strong></li>
+                <li>Brigadeiro branco <strong>2,00€</strong></li>
+                <li>Brigadeiro de coco <strong>2,00€</strong></li>
+                <li>Brigadeiro de doce de leite <strong>2,00€</strong></li>
+                <li>Brigadeiro de Nido/Ninho <strong>3,00€</strong></li>
+              </ul>
+            </section>
+        </aside>
+        <h2>Bolos Caseiros</h2>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-laranja300.jpg" alt="Bolo de Laranja">
+            <section class="lado">
+              <p class="strong">Bolo de Laranja</p>
+              <p>Clássico e delicioso bolo de laranja, ideal para o pequeno-almoço ou um lanche de tarde.</p>
+              <p><strong>9,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <section class="bolos caseiros">
-          <img src="imagens/logo-oficialres.jpeg" aling="right" alt="Bolo de chocolate">
-          <h4>Chocolate</h4>
-          <p>Bolo com massa de chocolate especial.</p>
-          <h5>9€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-laranja300.jpg" alt="Bolo de chocolate">
+            <section class="lado">
+              <p class="strong">Bolo de Chocolate</p>
+              <p>Tradicional bolo de chocolate, delicioso e fofinho para comer tomando aquele cafézinho.</p>
+              <p><strong>9,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <section class="bolos caseiros">
-          <img src="imagens/logo-oficialres.jpeg" aling="left" alt="Bolo de Coco">
-          <h4>Coco</h4>
-          <p>Bolo com massa de coco e um toque de coco ralado.</p>
-          <h5>9€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-laranja300.jpg" alt="Bolo de Coco">
+            <section class="lado">
+              <p class="strong">Bolo de Coco</p>
+              <p>Para os amantes de Coco! Bolo com coco na massa e topping de coco ralado para dar aquele sabor.</p>
+              <p><strong>9,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <section class="bolos caseiros">
-          <img src="imagens/logo-oficialres.jpeg" aling="left" alt="Bolo formigueiro">
-          <h4>Formigueiro</h4>
-          <p>Bolo caseiro com granulados de chocolate que dão o aspecto "formigueiro" do bolo.</p>
-          <h5>9€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-laranja300.jpg" alt="Bolo formigueiro">
+            <section class="lado">
+              <p class="strong">Bolo Formigueiro</p>
+              <p>Bolo caseiro formigueiro, para quem gosta de massa branca mas não abre mão de um bocadinho de chocolate.</p>
+              <p><strong>9,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <section class="bolos caseiros">
-          <img src="imagens/logo-oficialres.jpeg" aling="right" alt="Bolo de fubá com goiabada">
-          <h4>Fubá com Goiabada</h4>
-          <p>Bolo clássico de fubá com sabor especial de goiabada.</p>
-          <h5>11€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-laranja300.jpg" alt="Bolo de milho">
+            <section class="lado">
+              <p class="strong">Bolo de Milho</p>
+              <p>Bolo de milho delicioso com toque especial de coco ralado para melhorar ainda mais o sabor.</p>
+              <p><strong>12,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <section class="bolos caseiros">
-          <img src="imagens/logo-oficialres.jpeg" aling="left" alt="Bolo de Laranja">
-          <h4>Laranja</h4>
-          <p>Bolo delicioso com massa de laranja.</p>
-          <h5>9€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-laranja300.jpg" alt="Bolo de fubá com goiabada">
+            <section class="lado">
+              <p class="strong">Bolo de Fubá com Goiabada</p>
+              <p>Bolo clássico de fubá combinado com a deliciosa goiabada cremosa.</p>
+              <p><strong>11,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <section class="bolos caseiros">
-          <img src="imagens/logo-oficialres.jpeg" aling="right" alt="Bolo de maçã com canela">
-          <h4>Maçã com Canela</h4>
-          <p>Bolo caseiro de massa de maçã com um toque especial de canela.</p>
-          <h5>10€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-laranja300.jpg" alt="Bolo de banana com canela">
+            <section class="lado">
+              <p class="strong">Bolo de Banana com Canela</p>
+              <p>Bolo feito com massa de banana e canela, uma combinação deliciosa!</p>
+              <p><strong>10,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <section class="bolos caseiros">
-          <img src="imagens/logo-oficialres.jpeg" aling="left" alt="Bolo de milho">
-          <h4>Milho</h4>
-          <p>Bolo delicioso com massa de milho.</p>
-          <h5>12€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-laranja300.jpg" alt="Bolo de maçã com canela">
+            <section class="lado">
+              <p class="strong">Bolo de Maçã com Canela</p>
+              <p>Outra combinação espetacular, nosso bolo de maçã com canela faz sucesso por onde passa.</p>
+              <p><strong>10,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <h3>Bolos Caseiros com cobertura</h3>
-        <section class="bolos caseiros 2">
-          <img src="imagens/logo-oficialres.jpeg" aling="right" alt="Bolo de Cenoura com chocolate">
-          <h4>Cenoura com Chocolate</h4>
-          <p>Bolo caseiro de cenoura com cobertura deliciosa de chocolate cremoso.</p>
-          <h5>13€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <h2>Bolos Caseiros com cobertura</h2>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-cenoura300.jpg" alt="Bolo de Cenoura com chocolate">
+            <section class="lado">
+              <p class="strong">Bolo de Cenoura com Chocolate</p>
+              <p>O bolo de cenoura já é delicioso, mas combinado com cobertura de chocolate fica espetacular! </p>
+              <p><strong>13,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <section class="bolos caseiros 2">
-          <img src="imagens/logo-oficialres.jpeg" aling="left" alt="Bolo de churros com doce de leite">
-          <h4>Churros com Doce de Leite</h4>
-          <p>Bolo de churros com o inconfundível doce de leite.</p>
-          <h5>13€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
+        <section class="fora">
+          <section class="dentro">
+            <img src="imagens/fotos-300w-350h/bolo-cenoura300.jpg" alt="Bolo de churros com doce de leite">
+            <section class="lado">
+              <p class="strong">Bolo de Churros com Doce de Leite</p>
+              <p>Bolo de churros ou "porras recheadas" com o saboroso doce de leite cremoso.</p>
+              <p><strong>13,00€</strong></p>
+              <button id="whatsapp" class="button" type="button">
+                <a href="https://wa.me/351961252414/" target="_blank">Faça sua encomenda</a>
+              </button>
+            </section>
+          </section>
         </section>
-        <h3>Escolha sua cobertura</h3>
-        <section class="cobertura">
-          <h4>Brigadeiro tradicional</h4>
-          <h5>2€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
-        </section>
-        <section class="cobertura">
-          <h4>Brigadeiro branco</h4>
-          <h5>2€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
-        </section>
-        <section class="cobertura">
-          <h4>Brigadeiro de coco</h4>
-          <h5>2€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
-        </section>
-        <section class="cobertura">
-          <h4>Brigadeiro de doce de leite</h4>
-          <h5>2€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
-        </section>
-        <section class="cobertura">
-          <h4>Brigadeiro de Nido/Ninho</h4>
-          <h5>3€</h5>
-          <button id="whatsapp" class="button" type="button">
-            <a rel="stylesheet" href="https://wa.me/351961252414/">Pedir</a>
-          </button>
-        </section>
-    </main>
+  </main>
 </body>
 <footer>
     <section class="slogan">
